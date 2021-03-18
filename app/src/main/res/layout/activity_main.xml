@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E6F1F6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Row1"
+        android:layout_width="351dp"
+        android:layout_height="40dp"
+        android:background="#2196F3"
+        android:text="Row1"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Row2col1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Row2col1"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="#2196F3"
+        android:text="Row2\ncol1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/Row2col2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Row1" />
+
+    <TextView
+        android:id="@+id/Row2col2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="28dp"
+        android:background="#2196F3"
+        android:textColor="@color/white"
+        android:text="Row2\ncol2"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Row1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:background="#2196F3"
+        android:textColor="@color/white"
+        android:text="Row3\ncol1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Row"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Row2col1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:background="#2196F3"
+        android:textColor="@color/white"
+        android:text="Row3\ncol2"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Row"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/Row2col2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="28dp"
+        android:background="#2196F3"
+        android:text="Row3\ncol3"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Row2col2" />
+
+    <TextView
+        android:id="@+id/Row"
+        android:layout_width="351dp"
+        android:layout_height="40dp"
+        android:background="#2196F3"
+        android:text="Row4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
